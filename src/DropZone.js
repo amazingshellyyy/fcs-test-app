@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
-const FCS = require('fcs')
+const FCS = require('@amazyyy/fcs')
 function MyDropzone() {
   const onDrop = useCallback(acceptedFiles => {
     // Do something with the files

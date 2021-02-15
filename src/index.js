@@ -5,6 +5,7 @@ import App from './App';
 
 require('es6-promise').polyfill();
 require('core-js/es6/object');
+require('core-js/es7/array');
 
 ReactDOM.render(
   <React.StrictMode>

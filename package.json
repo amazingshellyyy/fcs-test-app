@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf ./docs && mv build ./docs",
-    "deploy": "npm run build && git add . && git commit -m 'chore: rebuild' ",
+    "deploy": "npm run build && git add . && git commit -m 'chore: rebuild' && git push",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-require('es6-promise')
+require('es6-promise').polyfill();
 
 ReactDOM.render(
   <React.StrictMode>

@@ -321,6 +321,10 @@ FCS.prototype.prepareWriteableStream = function(callback, readableStream) {
  */
 FCS.prototype._prepareReadParameters = function(databuf) {
   let isBE;
+  //  ORIGINAL:
+  // if (this.text.$BYTEORD.includes("2,1")) isBE = true;
+  // else if (this.text.$BYTEORD.includes("1,2")) isBE = false;
+  // FIXED:
   if (pollyfill.includes(this.text.$BYTEORD)) isBE = true;
   else if (pollyfill.includes(this.text.$BYTEORD)) isBE = false;
   else throw Error("cannot handle $BYTEORD= " + this.text.$BYTEORD);

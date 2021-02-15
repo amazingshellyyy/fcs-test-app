@@ -4,7 +4,7 @@ import DropZone from './DropZone'
 function App() {
   return (
     <div className="App">
-      IE sucks 3
+      IE sucks 4
       <DropZone/>
     </div>
   );
